@@ -25,10 +25,10 @@ const handleClick = () => {
             </div>
             <div className="flex flex-col items-start w-3/6 gap-24 justify-center">
                 {
-                    members.map((member) => {
+                    members.map((member,i) => {
                         return (
                             
-                            <div className="flex items-center gap-20 lg:gap-32">
+                            <div key={i} className="flex items-center gap-20 lg:gap-32">
                                 <Image src="/user.png" alt="ieee logo" width={100} height={100} className=""/>
                                 <div className="flex flex-col gap-2 lg:gap-12">
                                     <p className="lg:text-4xl sm:xl font-semibold">{member.name}</p>

@@ -53,9 +53,9 @@ function Execom() {
                                 </div>
             <div className="grid lg:grid-cols-4 grid-col-2 gap-16">
                 {
-                    members.map((member) => {
+                    members.map((member,i) => {
                         return (
-                            <div className="flex flex-col justify-center items-center gap-12">
+                            <div key={i} className="flex flex-col justify-center items-center gap-12">
                                 <Image src="/user.png" alt="ieee logo" width={100} height={100} className=""/>
                                 <div className="flex flex-col items-center gap-5">
                                     <p className="text-3xl font-semibold text-center">{member.name}</p>
