@@ -1,4 +1,4 @@
-function Titel( prop ) {
+function Titel( prop:any ) {
     return ( 
         <>
             <div className="flex flex-col items-center gap-5 h-3/4 lg:text-8xl text-5xl">
