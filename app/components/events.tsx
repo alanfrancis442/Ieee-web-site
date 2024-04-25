@@ -1,6 +1,12 @@
+"use client"
 import { FaArrowRightLong } from "react-icons/fa6";
 import Titel from "./title";
+import { useRouter } from "next/navigation";
 function Events() {
+    let router = useRouter();
+    const handleClick = () => {
+        router.push('/allEvents');
+    }
     return ( 
         <div className="bg-[#0A0A0A] py-10 lg:px-20 px-8 flex gap-10 justify-between h-screen relative">
             <div className="h-full flex items-end">
@@ -24,7 +30,7 @@ function Events() {
                 </div>
             </div>
             <div className="flex items-end">
-                <button>
+                <button onClick={handleClick}>
                 <FaArrowRightLong  className="lg:text-6xl text-3xl rotate-45"/>
                 </button>
             </div>

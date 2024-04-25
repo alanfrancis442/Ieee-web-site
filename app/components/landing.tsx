@@ -46,7 +46,7 @@ function Landing() {
                     <FaArrowRightLong  className="rotate-45"/>
                 </button>
             </div>
-            <div className="flex gap-12 lg:p-8 justify-between items-end">
+            <div className="flex pb-16 lg:p-8 justify-between items-end">
                 <div className="flex flex-col lg:gap-24 gap-16">
                     {
                         left_option.map((option,i) => {
