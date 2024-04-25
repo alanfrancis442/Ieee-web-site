@@ -40,31 +40,31 @@ function Landing() {
         
         <div ref={container} style={{clipPath: "polygon(0 0, 100% 0, 100% 0%, 0 0%)"}} className="bg-[#0A0A0A] overflow-hidden py-10 lg:px-20 px-8 flex flex-col gap-10 justify-between h-screen z-10 w-full absolute">
             <div className="flex justify-between w-full">
-                <h1 className="text-5xl font-bold text-white">IEEE SB MITS</h1>
-                <button onClick={down_animate} className="flex items-center gap-4 text-3xl">
+                <h1 className="lg:text-5xl text-xl font-bold text-white">IEEE SB MITS</h1>
+                <button onClick={down_animate} className="flex items-center gap-4 lg:text-3xl text-lg">
                     Close
                     <FaArrowRightLong  className="rotate-45"/>
                 </button>
             </div>
-            <div className="flex gap-12 p-8 justify-between items-end">
-                <div className="flex flex-col gap-24">
+            <div className="flex gap-12 lg:p-8 justify-between items-end">
+                <div className="flex flex-col lg:gap-24 gap-16">
                     {
                         left_option.map((option,i) => {
                             return (
                                 <button key={i} className="flex items-center font-semibold">
-                                    <h1 className="text-6xl font-semibold">{option.toUpperCase()}</h1>
+                                    <h1 className="lg:text-6xl text-xl font-semibold">{option.toUpperCase()}</h1>
                                 </button>
                             )
                         })
                     }
                 </div>
-                <div className="flex flex-col gap-24">
+                <div className="flex flex-col lg:gap-24 gap-16">
                     {
                         right_option.map((option,i) => {
                             return (
                                 <div key={i} className="font-semibold">
-                                    <h1 className="text-2xl font-semibold">{option.title}</h1>
-                                    {i!=2 ? <p className="text-lg font-light">{option.content}</p>:<div className="flex gap-5 p-2 text-2xl">
+                                    <h1 className="lg:text-2xl font-semibold">{option.title}</h1>
+                                    {i!=2 ? <p className="lg:text-lg text-sm font-light">{option.content}</p>:<div className="flex gap-5 p-2 lg:text-2xl">
                                     <FaInstagram />
                                     <CiTwitter />
                                     <FaTwitch />
@@ -79,16 +79,16 @@ function Landing() {
         </div>
         <div className="bg-[#0A0A0A] py-10 lg:px-20 px-8 flex flex-col gap-10 justify-between h-screen relative overflow-hidden">
             <div className="flex justify-between w-full">
-                <h1 className="text-5xl font-bold text-white">IEEE SB MITS</h1>
-                <button onClick={top_animate} className="flex items-center gap-4 text-3xl">
+                <h1 className="lg:text-5xl text-xl font-bold text-white">IEEE SB MITS</h1>
+                <button onClick={top_animate} className="flex items-center gap-4 lg:text-3xl text-lg">
                     Menu
                     <FaArrowRightLong  className="-rotate-45"/>
                 </button>
             </div>
             <Image src="/logo.png" alt="ieee logo" width={1024} height={1200} className="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2"/>
-            <div className="flex flex-col text-white gap-12 w-1/2">
-                <div className="lg:text-4xl font-semibold tracking-tighter">DIGITAL craftmanship SCLUPTING YOU AS A LEADER</div>
-                <div className="lg:text-2xl">Platform for the young minds to explore and experiment technological advancements with professional competencies following ethical standards</div>
+            <div className="flex flex-col text-white gap-8 lg:gap-12 lg:w-1/2 w-[90%]">
+                <div className="lg:text-4xl font-semibold tracking-tighter text-2xl">DIGITAL craftmanship SCLUPTING YOU AS A LEADER</div>
+                <div className="lg:text-2xl text-lg">Platform for the young minds to explore and experiment technological advancements with professional competencies following ethical standards</div>
             </div>
             <button>
             <FaArrowRightLong  className="lg:text-6xl text-3xl rotate-45"/>

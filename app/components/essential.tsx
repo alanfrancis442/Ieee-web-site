@@ -16,7 +16,7 @@ function Essentials() {
                     options.map((option,i) => {
                         return (
                             <button key={i} className="flex items-center font-semibold">
-                                <h1 className="text-xl">{option.toUpperCase()}</h1>
+                                <h1 className="text-xl text-left">{option.toUpperCase()}</h1>
                             </button>
                         )
                     })
